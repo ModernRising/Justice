@@ -186,7 +186,7 @@ body {
         height: 17px;
         position: absolute;
         right: 0;
-        top: 10px;
+        top: calc(64% - .7rem);
     }
     &__link {
         font-size: 1.75rem;
@@ -231,5 +231,151 @@ body {
         border: none;
         color: #fff;
         font-weight: 800;
+    }
+}
+
+.popular {
+    padding-top: 108px;
+    &__wrapper {
+        display: grid;
+        margin-top: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 198px);
+        gap: 27px;
+        text-align: center;
+    }
+    &__item {
+        border-radius: 20px;
+        padding: 125px 0px 0px 0px;
+        position: relative;
+        &_romance {
+            background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
+        }
+        &_drama {
+            background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+        }
+        &_history {
+            background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+        }
+        &_action {
+            background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+        }
+        &_sci-fi {
+            background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+        }
+        &_horror {
+            background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
+        }
+        &_comedy {
+            background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
+        }
+        &_documentary {
+            background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+        }
+        
+    }
+    &__icon {
+        position: relative;
+    }
+    &__image {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__header {
+        font-weight: 700;
+        font-size: 1.75rem;
+    }
+}
+
+.actors {
+    padding: 70px 0 0px 0px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        flex: 0 0 15%;
+    }
+    &__image {
+        border-radius: 100%;
+    }
+    &__name {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+}
+
+.coming {
+    padding-top:100px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        flex: 0 0 50%;
+    }
+    &__link {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: 341px;
+        border-radius: 20px 0 0 20px;
+        &_2 {
+            border-radius: 0px 20px 20px 0;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+.offer {
+    padding: 115px 0 0 0;
+    &__banner {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1224px;
+        min-height: 270px;
+        padding: 0px 150px 0px 57px;
+        justify-content: space-between;
+        align-items: center;
+        background: url("../img/offer-banner.png") no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    &__title {
+        font-size: 4rem;
+        margin: 0 ;
+        line-height: 1;
+        max-width: 780px;
+    }
+
+    &__btn {
+        width: 141px;
+        height: 50px;
+        font-weight: 800;
+        background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+        color: #FFF;
+        border: none;
+        box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+        border-radius: 100px;
+        text-align: center;
+        cursor: pointer;
     }
 }

@@ -235,7 +235,7 @@ body {
   height: 17px;
   position: absolute;
   right: 0;
-  top: 10px;
+  top: calc(64% - .7rem);
 }
 
 .title__link {
@@ -300,6 +300,209 @@ body {
   border: none;
   color: #fff;
   font-weight: 800;
+}
+
+.popular {
+  padding-top: 108px;
+}
+
+.popular__wrapper {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 198px);
+  gap: 27px;
+  text-align: center;
+}
+
+.popular__item {
+  border-radius: 20px;
+  padding: 125px 0px 0px 0px;
+  position: relative;
+}
+
+.popular__item_romance {
+  background: -o-linear-gradient(340.69deg, #FD093F 2.4%, #F383F1 100%);
+  background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
+}
+
+.popular__item_drama {
+  background: -o-linear-gradient(335.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+  background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+}
+
+.popular__item_history {
+  background: -o-linear-gradient(340.69deg, #B936FF 2.4%, #57DEDA 100%);
+  background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+}
+
+.popular__item_action {
+  background: -o-linear-gradient(340.69deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+  background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+}
+
+.popular__item_sci-fi {
+  background: -o-linear-gradient(340.69deg, #FF6472 2.4%, #FDA75D 100%);
+  background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+}
+
+.popular__item_horror {
+  background: -o-linear-gradient(339.84deg, #13547A 2.37%, #80D0C7 96.77%);
+  background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
+}
+
+.popular__item_comedy {
+  background: -o-linear-gradient(340.07deg, #FFF77B 2.37%, #FFBF42 50%);
+  background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
+}
+
+.popular__item_documentary {
+  background: -o-linear-gradient(340.69deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+  background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+}
+
+.popular__icon {
+  position: relative;
+}
+
+.popular__image {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.popular__header {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.actors {
+  padding: 70px 0 0px 0px;
+}
+
+.actors__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.actors__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
+.actors__image {
+  border-radius: 100%;
+}
+
+.actors__name {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.coming {
+  padding-top: 100px;
+}
+
+.coming__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coming__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.coming__link {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 341px;
+  border-radius: 20px 0 0 20px;
+}
+
+.coming__link_2 {
+  border-radius: 0px 20px 20px 0;
+}
+
+.coming__image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.offer {
+  padding: 115px 0 0 0;
+}
+
+.offer__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1224px;
+  min-height: 270px;
+  padding: 0px 150px 0px 57px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/offer-banner.png") no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.offer__title {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+  max-width: 780px;
+}
+
+.offer__btn {
+  width: 141px;
+  height: 50px;
+  font-weight: 800;
+  background: -o-linear-gradient(133.47deg, #26FFF2 13.2%, #326CFF 71.54%);
+  background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+  color: #FFF;
+  border: none;
+  -webkit-box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+          box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
 }
 
 * {
