@@ -1,6 +1,7 @@
 body {
     background: #000000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .header {
@@ -9,6 +10,7 @@ body {
     align-items: center;
     height: 70px;
     padding: 15px 0;
+    position: relative;
     &__logo {
         cursor: pointer;
     }
@@ -28,18 +30,29 @@ body {
         display: none;
         background-color: transparent;
         border: none;
-        width: 50px;
+        width: 40px;
         cursor: pointer;
         &__item {
             display: block;
             width: 100%;
-            height: 3px;
+            height: 2px;
             background-color: #fff;
-            margin-bottom: 8px;
+            margin-bottom: 7px;
             transition: 0.4s all;
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+        &_active {
+            .hamburger__item {
+                transform: rotate(-45deg) translate(-6px,4px);
+              } 
+            .hamburger__item2 {
+                  opacity: 0;
+                } 
+            .hamburger__item3 {
+                transform: rotate(45deg) translate(-8px,-7px);
+              }
         }
     }
 }
