@@ -268,7 +268,7 @@ body {
 }
 
 .movies {
-  padding: 68px 0 100px 0;
+  padding: 68px 0 40px 0;
 }
 
 .movies__container:nth-child(1n + 2) {
